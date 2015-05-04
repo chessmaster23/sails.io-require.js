@@ -1,9 +1,10 @@
 {
-  "name": "sails.io.js",
+  "name": "sails.io-require.js",
   "main": "dist/sails.io.js",
   "version": "0.11.5",
   "homepage": "https://github.com/balderdashy/sails.io.js",
   "authors": [
+    "chessmaster23 <niko.kovacic2@gmail.com>"
     "Mike McNeil <mike@balderdash.co>"
   ],
   "description": "JavaScript Client SDK for Sails",

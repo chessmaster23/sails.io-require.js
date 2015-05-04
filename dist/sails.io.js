@@ -1024,10 +1024,18 @@ var parts=["source","protocol","authority","userInfo","user","password","host","
     module.exports = SailsIOClient;
     return SailsIOClient;
   }
+  else if (typeof define === 'function' && define.amd) {
+    define(["socketIo"], function(io) {
+      window.io = io;
+      _io = io;
 
-  // Otherwise, try to instantiate the client:
-  // In case you're wrapping the socket.io client to prevent pollution of the
-  // global namespace, you can replace the global `io` with your own `io` here:
-  return SailsIOClient();
-
+      return SailsIOClient();
+    });
+  }
+  else {
+    // Otherwise, try to instantiate the client:
+    // In case you're wrapping the socket.io client to prevent pollution of the
+    // global namespace, you can replace the global `io` with your own `io` here:
+    return SailsIOClient();
+  }
 })();
