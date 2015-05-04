@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/balderdashy/sails.io.js.svg?branch=master)](https://travis-ci.org/balderdashy/sails.io.js)
 
 JavaScript SDK for communicating w/ Sails via sockets from Node.js or the browser.
+In your require.js config define a "socketIo" path to use this fork of sails.io.js.
 
 ========================================
 
